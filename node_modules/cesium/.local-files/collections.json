@@ -1,0 +1,1082 @@
+{
+  "strassen": {
+    "abschnitteaeste": {
+      "title": "Abschnitte und Äste",
+      "translatedTitle": "Sections and Branches",
+      "id": "abschnitteaeste",
+      "itemCount": 31591,
+      "totalItems": 31591
+    },
+    "netzknoten": {
+      "title": "Netzknoten",
+      "translatedTitle": "Network nodes",
+      "id": "netzknoten",
+      "itemCount": 11256,
+      "totalItems": 11256
+    },
+    "nullpunkte": {
+      "title": "Nullpunkte",
+      "translatedTitle": "Zero points",
+      "id": "nullpunkte",
+      "itemCount": 33754,
+      "totalItems": 33754
+    },
+    "unfaelle": {
+      "title": "Unfälle",
+      "translatedTitle": "Accidents",
+      "id": "unfaelle",
+      "itemCount": 31464,
+      "totalItems": 31464
+    },
+    "unfaelle2": {
+      "title": "Unfälle (alternative Darstellung)",
+      "translatedTitle": "Accidents (alternative representation)",
+      "id": "unfaelle2",
+      "itemCount": 31464,
+      "totalItems": 31464
+    }
+  },
+  "vinyard": {
+    "vineyards": {
+      "title": "Vineyards",
+      "translatedTitle": "Vineyards",
+      "id": "vineyards",
+      "itemCount": 1585,
+      "totalItems": 1585
+    }
+  },
+  "finland-topo": {
+    "syvyyskayransyvyysarvo": {
+      "title": "syvyyskayransyvyysarvo",
+      "translatedTitle": "Depth crossing depth value",
+      "id": "syvyyskayransyvyysarvo",
+      "totalItems": 64184
+    },
+    "tiesymboli": {
+      "title": "tiesymboli",
+      "translatedTitle": "Road symbol",
+      "id": "tiesymboli",
+      "totalItems": 46921
+    },
+    "kalliosymboli": {
+      "title": "kalliosymboli",
+      "translatedTitle": "Rock symbol",
+      "id": "kalliosymboli",
+      "extraLargeData": true,
+      "totalItems": 1553229
+    },
+    "muuntoasema": {
+      "title": "muuntoasema",
+      "translatedTitle": "Transformer station",
+      "id": "muuntoasema",
+      "totalItems": 3917
+    },
+    "retkeilyalue": {
+      "title": "retkeilyalue",
+      "translatedTitle": "Recreation area",
+      "id": "retkeilyalue",
+      "totalItems": 13
+    },
+    "osoitepiste": {
+      "title": "osoitepiste",
+      "translatedTitle": "Address point",
+      "id": "osoitepiste",
+      "totalItems": 28772
+    },
+    "jarvi": {
+      "title": "jarvi",
+      "translatedTitle": "Lake",
+      "id": "jarvi",
+      "totalItems": 151233
+    },
+    "pelastuskoodipiste": {
+      "title": "pelastuskoodipiste",
+      "translatedTitle": "Rescue code point",
+      "id": "pelastuskoodipiste",
+      "totalItems": 0
+    },
+    "urheilujavirkistysalue": {
+      "title": "urheilujavirkistysalue",
+      "translatedTitle": "Sports and recreation area",
+      "id": "urheilujavirkistysalue",
+      "totalItems": 15855
+    },
+    "puu": {
+      "title": "puu",
+      "translatedTitle": "Tree",
+      "id": "puu",
+      "totalItems": 1791
+    },
+    "virtavesikapea": {
+      "title": "virtavesikapea",
+      "translatedTitle": "Stream narrow",
+      "id": "virtavesikapea",
+      "extraLargeData": true,
+      "totalItems": 17246159
+    },
+    "pato": {
+      "title": "pato",
+      "translatedTitle": "Dam",
+      "id": "pato",
+      "totalItems": 1790
+    },
+    "rauhoitettukohde": {
+      "title": "rauhoitettukohde",
+      "translatedTitle": "Protected area",
+      "id": "rauhoitettukohde",
+      "totalItems": 12428
+    },
+    "sulkuportti": {
+      "title": "sulkuportti",
+      "translatedTitle": "Lock gate",
+      "id": "sulkuportti",
+      "totalItems": 137
+    },
+    "allas": {
+      "title": "allas",
+      "translatedTitle": "Basin",
+      "id": "allas",
+      "totalItems": 57753
+    },
+    "korkeuskayra": {
+      "title": "korkeuskayra",
+      "translatedTitle": "Elevation contour",
+      "id": "korkeuskayra",
+      "extraLargeData": true,
+      "totalItems": 6866135
+    },
+    "tulvaalue": {
+      "title": "tulvaalue",
+      "translatedTitle": "Flood area",
+      "id": "tulvaalue",
+      "totalItems": 1845
+    },
+    "muuntaja": {
+      "title": "muuntaja",
+      "translatedTitle": "Transformer",
+      "id": "muuntaja",
+      "totalItems": 68883
+    },
+    "syvyyskayra": {
+      "title": "syvyyskayra",
+      "translatedTitle": "Lake Depth contour",
+      "id": "syvyyskayra",
+      "totalItems": 140752
+    },
+    "autoliikennealue": {
+      "title": "autoliikennealue",
+      "translatedTitle": "Vehicle traffic area",
+      "id": "autoliikennealue",
+      "totalItems": 11986
+    },
+    "louhos": {
+      "title": "louhos",
+      "translatedTitle": "Quarry",
+      "id": "louhos",
+      "totalItems": 1549
+    },
+    "rautatie": {
+      "title": "rautatie",
+      "translatedTitle": "Railway",
+      "id": "rautatie",
+      "totalItems": 19095
+    },
+    "suurjannitelinjanpylvas": {
+      "title": "suurjannitelinjanpylvas",
+      "translatedTitle": "High voltage line pole",
+      "id": "suurjannitelinjanpylvas",
+      "totalItems": 89391
+    },
+    "vesikuoppa": {
+      "title": "vesikuoppa",
+      "translatedTitle": "Water pit",
+      "id": "vesikuoppa",
+      "totalItems": 128037
+    },
+    "suojanne": {
+      "title": "suojanne",
+      "translatedTitle": "Shelter",
+      "id": "suojanne",
+      "totalItems": 4857
+    },
+    "korkeuskayrankorkeusarvo": {
+      "title": "korkeuskayrankorkeusarvo",
+      "translatedTitle": "Elevation contour height value",
+      "id": "korkeuskayrankorkeusarvo",
+      "totalItems": 212147
+    },
+    "tieviiva": {
+      "title": "tieviiva",
+      "translatedTitle": "Road line",
+      "id": "tieviiva",
+      "extraLargeData": true,
+      "totalItems": 3730942
+    },
+    "valtakunnanrajapyykki": {
+      "title": "valtakunnanrajapyykki",
+      "translatedTitle": "National boundary marker",
+      "id": "valtakunnanrajapyykki",
+      "totalItems": 1558
+    },
+    "koski": {
+      "title": "koski",
+      "translatedTitle": "Rapids",
+      "id": "koski",
+      "totalItems": 15742
+    },
+    "maatalousmaa": {
+      "title": "maatalousmaa",
+      "translatedTitle": "Agricultural land",
+      "id": "maatalousmaa",
+      "totalItems": 425224
+    },
+    "karttasymboli": {
+      "title": "karttasymboli",
+      "translatedTitle": "Map symbol",
+      "id": "karttasymboli",
+      "totalItems": 108676
+    },
+    "kunnanhallintoraja": {
+      "title": "kunnanhallintoraja",
+      "translatedTitle": "Municipal boundary",
+      "id": "kunnanhallintoraja",
+      "totalItems": 1202
+    },
+    "masto": {
+      "title": "masto",
+      "translatedTitle": "Mast",
+      "id": "masto",
+      "totalItems": 8446
+    },
+    "ampumaalue": {
+      "title": "ampumaalue",
+      "translatedTitle": "Shooting range",
+      "id": "ampumaalue",
+      "totalItems": 339
+    },
+    "viettoviiva": {
+      "title": "viettoviiva",
+      "translatedTitle": "Slope line",
+      "id": "viettoviiva",
+      "totalItems": 205303
+    },
+    "puurivi": {
+      "title": "puurivi",
+      "translatedTitle": "Tree line",
+      "id": "puurivi",
+      "totalItems": 3413
+    },
+    "merkittavaluontokohde": {
+      "title": "merkittavaluontokohde",
+      "translatedTitle": "Notable natural site",
+      "id": "merkittavaluontokohde",
+      "totalItems": 195
+    },
+    "syvyyspiste": {
+      "title": "syvyyspiste",
+      "translatedTitle": "Depth point",
+      "id": "syvyyspiste",
+      "totalItems": 127920
+    },
+    "satamaalue": {
+      "title": "Satama-alue",
+      "translatedTitle": "Port area",
+      "id": "satamaalue",
+      "totalItems": 95
+    },
+    "taytemaa": {
+      "title": "taytemaa",
+      "translatedTitle": "Fill land",
+      "id": "taytemaa",
+      "totalItems": 1534
+    },
+    "lahde": {
+      "title": "lahde",
+      "translatedTitle": "Spring (water source)",
+      "id": "lahde",
+      "totalItems": 36616
+    },
+    "suo": {
+      "title": "suo",
+      "translatedTitle": "Swamp",
+      "id": "suo",
+      "totalItems": 1411551
+    },
+    "metsamaanmuokkaus": {
+      "title": "metsamaanmuokkaus",
+      "translatedTitle": "Forest land cultivation",
+      "id": "metsamaanmuokkaus",
+      "totalItems": 807
+    },
+    "tienroteksti": {
+      "title": "tienroteksti",
+      "translatedTitle": "Road text",
+      "id": "tienroteksti",
+      "totalItems": 35196
+    },
+    "mastonkorkeus": {
+      "title": "mastonkorkeus",
+      "translatedTitle": "Mast height",
+      "id": "mastonkorkeus",
+      "totalItems": 7583
+    },
+    "rakennusreunaviiva": {
+      "title": "rakennusreunaviiva",
+      "translatedTitle": "Building edge line",
+      "id": "rakennusreunaviiva",
+      "totalItems": 5727082
+    },
+    "savupiipunkorkeus": {
+      "title": "savupiipunkorkeus",
+      "translatedTitle": "Chimney height",
+      "id": "savupiipunkorkeus",
+      "totalItems": 493
+    },
+    "ulkojasisasaaristonraja": {
+      "title": "ulkojasisasaaristonraja",
+      "translatedTitle": "Outer archipelago boundary",
+      "id": "ulkojasisasaaristonraja",
+      "totalItems": 101
+    },
+    "ilmarata": {
+      "title": "ilmarata",
+      "translatedTitle": "Aerial railway",
+      "id": "ilmarata",
+      "totalItems": 1885
+    },
+    "muistomerkki": {
+      "title": "muistomerkki",
+      "translatedTitle": "Monument",
+      "id": "muistomerkki",
+      "totalItems": 2875
+    },
+    "vesikulkuvaylanteksti": {
+      "title": "vesikulkuvaylanteksti",
+      "translatedTitle": "Waterway text",
+      "id": "vesikulkuvaylanteksti",
+      "totalItems": 2228
+    },
+    "matalikko": {
+      "title": "matalikko",
+      "translatedTitle": "Shoal",
+      "id": "matalikko",
+      "totalItems": 18942
+    },
+    "muuavoinalue": {
+      "title": "muuavoinalue",
+      "translatedTitle": "Other open area",
+      "id": "muuavoinalue",
+      "totalItems": 207358
+    },
+    "suojelualueenreunaviiva": {
+      "title": "suojelualueenreunaviiva",
+      "translatedTitle": "Protected area boundary",
+      "id": "suojelualueenreunaviiva",
+      "totalItems": 45170
+    },
+    "kunnanhallintokeskus": {
+      "title": "kunnanhallintokeskus",
+      "translatedTitle": "Municipal administration center",
+      "id": "kunnanhallintokeskus",
+      "totalItems": 309
+    },
+    "luonnonpuisto": {
+      "title": "luonnonpuisto",
+      "translatedTitle": "Nature reserve",
+      "id": "luonnonpuisto",
+      "totalItems": 20
+    },
+    "puisto": {
+      "title": "puisto",
+      "translatedTitle": "Park",
+      "id": "puisto",
+      "totalItems": 3595
+    },
+    "vesikivikko": {
+      "title": "vesikivikko",
+      "translatedTitle": "Water gravel",
+      "id": "vesikivikko",
+      "totalItems": 33145
+    },
+    "vesikulkuvayla": {
+      "title": "vesikulkuvayla",
+      "translatedTitle": "Waterway",
+      "id": "vesikulkuvayla",
+      "totalItems": 10479
+    },
+    "vesiasteikko": {
+      "title": "vesiasteikko",
+      "translatedTitle": "Water scale",
+      "id": "vesiasteikko",
+      "totalItems": 659
+    },
+    "lahestymisvalo": {
+      "title": "lahestymisvalo",
+      "translatedTitle": "Approach light",
+      "id": "lahestymisvalo",
+      "totalItems": 1242
+    },
+    "maastokuvionreuna": {
+      "title": "maastokuvionreuna",
+      "translatedTitle": "Terrain pattern edge",
+      "id": "maastokuvionreuna",
+      "totalItems": 9993979
+    },
+    "tulentekopaikka": {
+      "title": "tulentekopaikka",
+      "translatedTitle": "Campfire site",
+      "id": "tulentekopaikka",
+      "totalItems": 1933
+    },
+    "kellotapuli": {
+      "title": "kellotapuli",
+      "translatedTitle": "Bell tower",
+      "id": "kellotapuli",
+      "totalItems": 378
+    },
+    "tuulivoimala": {
+      "title": "tuulivoimala",
+      "translatedTitle": "Wind turbine",
+      "id": "tuulivoimala",
+      "totalItems": 1867
+    },
+    "rakennus": {
+      "title": "rakennus",
+      "translatedTitle": "Building",
+      "id": "rakennus",
+      "totalItems": 5622883
+    },
+    "varastoalue": {
+      "title": "varastoalue",
+      "translatedTitle": "Storage area",
+      "id": "varastoalue",
+      "totalItems": 7991
+    },
+    "vesikivi": {
+      "title": "vesikivi",
+      "translatedTitle": "Water stone",
+      "id": "vesikivi",
+      "totalItems": 546290
+    },
+    "niitty": {
+      "title": "niitty",
+      "translatedTitle": "Meadow",
+      "id": "niitty",
+      "totalItems": 83484
+    },
+    "uittolaite": {
+      "title": "uittolaite",
+      "translatedTitle": "Rafting device",
+      "id": "uittolaite",
+      "totalItems": 2265
+    },
+    "vedenpinnankorkeusluku": {
+      "title": "vedenpinnankorkeusluku",
+      "translatedTitle": "Water surface elevation value",
+      "id": "vedenpinnankorkeusluku",
+      "totalItems": 119244
+    },
+    "turvalaite": {
+      "title": "turvalaite",
+      "translatedTitle": "Safety device",
+      "id": "turvalaite",
+      "totalItems": 5680
+    },
+    "suojametsa": {
+      "title": "suojametsa",
+      "translatedTitle": "Protective forest",
+      "id": "suojametsa",
+      "totalItems": 0
+    },
+    "rajavyohykkeentakaraja": {
+      "title": "rajavyohykkeentakaraja",
+      "translatedTitle": "Border zone back boundary",
+      "id": "rajavyohykkeentakaraja",
+      "totalItems": 632
+    },
+    "lentokenttaalue": {
+      "title": "lentokenttaalue",
+      "translatedTitle": "Airport area",
+      "id": "lentokenttaalue",
+      "totalItems": 828
+    },
+    "luonnonsuojelualue": {
+      "title": "luonnonsuojelualue",
+      "translatedTitle": "Nature conservation area",
+      "id": "luonnonsuojelualue",
+      "totalItems": 21883
+    },
+    "kansallispuisto": {
+      "title": "kansallispuisto",
+      "translatedTitle": "National park",
+      "id": "kansallispuisto",
+      "totalItems": 3508
+    },
+    "hietikko": {
+      "title": "hietikko",
+      "translatedTitle": "Sand",
+      "id": "hietikko",
+      "totalItems": 13565
+    },
+    "kivi": {
+      "title": "kivi",
+      "translatedTitle": "Stone",
+      "id": "kivi",
+      "totalItems": 505938
+    },
+    "hylynsyvyys": {
+      "title": "hylynsyvyys",
+      "translatedTitle": "Wreck depth",
+      "id": "hylynsyvyys",
+      "totalItems": 14
+    },
+    "sahkolinja": {
+      "title": "sahkolinja",
+      "translatedTitle": "Power line",
+      "id": "sahkolinja",
+      "totalItems": 159502
+    },
+    "virtausnuoli": {
+      "title": "virtausnuoli",
+      "translatedTitle": "Flow arrow",
+      "id": "virtausnuoli",
+      "totalItems": 196532
+    },
+    "metsanraja": {
+      "title": "metsanraja",
+      "translatedTitle": "Forest boundary",
+      "id": "metsanraja",
+      "totalItems": 258
+    },
+    "hautausmaa": {
+      "title": "hautausmaa",
+      "translatedTitle": "Cemetery",
+      "id": "hautausmaa",
+      "totalItems": 1380
+    },
+    "kunta": {
+      "title": "kunta",
+      "translatedTitle": "Municipality",
+      "id": "kunta",
+      "totalItems": 308
+    },
+    "virtavesialue": {
+      "title": "virtavesialue",
+      "translatedTitle": "Stream area",
+      "id": "virtavesialue",
+      "totalItems": 20576
+    },
+    "nakotorni": {
+      "title": "nakotorni",
+      "translatedTitle": "Watchtower",
+      "id": "nakotorni",
+      "totalItems": 1190
+    },
+    "sahkolinjansymboli": {
+      "title": "sahkolinjansymboli",
+      "translatedTitle": "Power line symbol",
+      "id": "sahkolinjansymboli",
+      "totalItems": 109804
+    },
+    "kaatopaikka": {
+      "title": "kaatopaikka",
+      "translatedTitle": "Landfill",
+      "id": "kaatopaikka",
+      "totalItems": 82
+    },
+    "savupiippu": {
+      "title": "savupiippu",
+      "translatedTitle": "Chimney",
+      "id": "savupiippu",
+      "totalItems": 1304
+    },
+    "maasto2kuvionreuna": {
+      "title": "maasto2kuvionreuna",
+      "translatedTitle": "Terrain pattern 2 edge",
+      "id": "maasto2kuvionreuna",
+      "totalItems": 493539
+    },
+    "rautatieliikennepaikka": {
+      "title": "rautatieliikennepaikka",
+      "translatedTitle": "Railway traffic area",
+      "id": "rautatieliikennepaikka",
+      "totalItems": 559
+    },
+    "aita": {
+      "title": "aita",
+      "translatedTitle": "Fence",
+      "id": "aita",
+      "totalItems": 27053
+    },
+    "paikannimi": {
+      "title": "paikannimi",
+      "translatedTitle": "Place name",
+      "id": "paikannimi",
+      "totalItems": 1172353
+    },
+    "sisaistenaluevesienulkoraja": {
+      "title": "sisaistenaluevesienulkoraja",
+      "translatedTitle": "Internal water boundary",
+      "id": "sisaistenaluevesienulkoraja",
+      "totalItems": 190
+    },
+    "vesitorni": {
+      "title": "vesitorni",
+      "translatedTitle": "Water tower",
+      "id": "vesitorni",
+      "totalItems": 361
+    },
+    "kallioalue": {
+      "title": "kallioalue",
+      "translatedTitle": "Rock area",
+      "id": "kallioalue",
+      "totalItems": 1289728
+    },
+    "kalliohalkeama": {
+      "title": "kalliohalkeama",
+      "translatedTitle": "Rock fracture",
+      "id": "kalliohalkeama",
+      "totalItems": 40
+    },
+    "maatuvavesialue": {
+      "title": "maatuvavesialue",
+      "translatedTitle": "Groundwater area",
+      "id": "maatuvavesialue",
+      "totalItems": 11776
+    },
+    "jyrkanne": {
+      "title": "jyrkanne",
+      "translatedTitle": "Cliff",
+      "id": "jyrkanne",
+      "totalItems": 209310
+    },
+    "uittoranni": {
+      "title": "uittoranni",
+      "translatedTitle": "Rafting shore",
+      "id": "uittoranni",
+      "totalItems": 36
+    },
+    "portti": {
+      "title": "portti",
+      "translatedTitle": "Gate",
+      "id": "portti",
+      "totalItems": 8800
+    },
+    "pistolaituriviiva": {
+      "title": "pistolaituriviiva",
+      "translatedTitle": "Dockline",
+      "id": "pistolaituriviiva",
+      "totalItems": 12188
+    },
+    "kaislikko": {
+      "title": "kaislikko",
+      "translatedTitle": "Reed bed",
+      "id": "kaislikko",
+      "totalItems": 85670
+    },
+    "kivikko": {
+      "title": "kivikko",
+      "translatedTitle": "Gravel",
+      "id": "kivikko",
+      "totalItems": 167285
+    },
+    "aallonmurtaja": {
+      "title": "aallonmurtaja",
+      "translatedTitle": "Breakwater",
+      "id": "aallonmurtaja",
+      "totalItems": 639
+    },
+    "rakennelma": {
+      "title": "rakennelma",
+      "translatedTitle": "Structure",
+      "id": "rakennelma",
+      "totalItems": 53580
+    },
+    "ankkuripaikka": {
+      "title": "ankkuripaikka",
+      "translatedTitle": "Anchorage",
+      "id": "ankkuripaikka",
+      "totalItems": 206
+    },
+    "taajaanrakennetunalueenreuna": {
+      "title": "taajaanrakennetunalueenreuna",
+      "translatedTitle": "Edge of the densely built area",
+      "id": "taajaanrakennetunalueenreuna",
+      "totalItems": 5771
+    },
+    "ilmaradankannatinpylvas": {
+      "title": "ilmaradankannatinpylvas",
+      "translatedTitle": "Aerial railway support pole",
+      "id": "ilmaradankannatinpylvas",
+      "totalItems": 2389
+    },
+    "maaaineksenottoalue": {
+      "title": "maaaineksenottoalue",
+      "translatedTitle": "Soil extraction area",
+      "id": "maaaineksenottoalue",
+      "totalItems": 13706
+    },
+    "aidansymboli": {
+      "title": "aidansymboli",
+      "translatedTitle": "Fence symbol",
+      "id": "aidansymboli",
+      "totalItems": 3
+    },
+    "hylky": {
+      "title": "hylky",
+      "translatedTitle": "Wreck",
+      "id": "hylky",
+      "totalItems": 76
+    },
+    "metsamaankasvillisuus": {
+      "title": "metsamaankasvillisuus",
+      "translatedTitle": "Forest land vegetation",
+      "id": "metsamaankasvillisuus",
+      "totalItems": 2087881
+    },
+    "suojaalue": {
+      "title": "suojaalue",
+      "translatedTitle": "Protection area",
+      "id": "suojaalue",
+      "totalItems": 18
+    },
+    "luiska": {
+      "title": "luiska",
+      "translatedTitle": "Ramp",
+      "id": "luiska",
+      "totalItems": 93546
+    },
+    "tervahauta": {
+      "title": "tervahauta",
+      "translatedTitle": "Tar pit",
+      "id": "tervahauta",
+      "totalItems": 30645
+    },
+    "suojaalueenreunaviiva": {
+      "title": "suojaalueenreunaviiva",
+      "translatedTitle": "Protection area boundary",
+      "id": "suojaalueenreunaviiva",
+      "totalItems": 19
+    },
+    "soistuma": {
+      "title": "soistuma",
+      "translatedTitle": "Swamp",
+      "id": "soistuma",
+      "totalItems": 629270
+    },
+    "harvalouhikko": {
+      "title": "harvalouhikko",
+      "translatedTitle": "Sparse quarry",
+      "id": "harvalouhikko",
+      "totalItems": 1550716
+    },
+    "vesikulkuvaylankulkusuunta": {
+      "title": "vesikulkuvaylankulkusuunta",
+      "translatedTitle": "Waterway direction",
+      "id": "vesikulkuvaylankulkusuunta",
+      "totalItems": 465
+    },
+    "aluemerenulkoraja": {
+      "title": "aluemerenulkoraja",
+      "translatedTitle": "Area sea boundary",
+      "id": "aluemerenulkoraja",
+      "totalItems": 69
+    },
+    "rautatiensymboli": {
+      "title": "rautatiensymboli",
+      "translatedTitle": "Railway symbol",
+      "id": "rautatiensymboli",
+      "totalItems": 3299
+    },
+    "taajaanrakennettualue": {
+      "title": "taajaanrakennettualue",
+      "translatedTitle": "Densely built area",
+      "id": "taajaanrakennettualue",
+      "totalItems": 5423
+    },
+    "suojametsanreunaviiva": {
+      "title": "suojametsanreunaviiva",
+      "translatedTitle": "Protective forest boundary",
+      "id": "suojametsanreunaviiva",
+      "totalItems": 1254
+    },
+    "meri": {
+      "title": "meri",
+      "translatedTitle": "Sea",
+      "id": "meri",
+      "totalItems": 1164
+    },
+    "tunnelinaukko": {
+      "title": "tunnelinaukko",
+      "translatedTitle": "Tunnel entrance",
+      "id": "tunnelinaukko",
+      "totalItems": 0
+    },
+    "selite": {
+      "title": "selite",
+      "translatedTitle": "Explanation",
+      "id": "selite",
+      "totalItems": 149238
+    }
+  },
+  "daraa": {
+    "AeronauticCrv": {
+      "title": "Aeronautic (Curves)",
+      "translatedTitle": "Aeronautic (Curves)",
+      "id": "AeronauticCrv",
+      "itemCount": 20,
+      "totalItems": 20
+    },
+    "AeronauticSrf": {
+      "title": "Aeronautic (Surfaces)",
+      "translatedTitle": "Aeronautic (Surfaces)",
+      "id": "AeronauticSrf",
+      "itemCount": 8,
+      "totalItems": 8
+    },
+    "AgriculturePnt": {
+      "title": "Agricultural (Points)",
+      "translatedTitle": "Agricultural (Points)",
+      "id": "AgriculturePnt",
+      "itemCount": 1,
+      "totalItems": 1
+    },
+    "AgricultureSrf": {
+      "title": "Agricultural (Surfaces)",
+      "translatedTitle": "Agricultural (Surfaces)",
+      "id": "AgricultureSrf",
+      "itemCount": 101,
+      "totalItems": 101
+    },
+    "CulturePnt": {
+      "title": "Cultural (Points)",
+      "translatedTitle": "Cultural (Points)",
+      "id": "CulturePnt",
+      "itemCount": 5,
+      "totalItems": 5
+    },
+    "CultureSrf": {
+      "title": "Cultural (Surfaces)",
+      "translatedTitle": "Cultural (Surfaces)",
+      "id": "CultureSrf",
+      "itemCount": 14,
+      "totalItems": 14
+    },
+    "FacilityPnt": {
+      "title": "Facility (Points)",
+      "translatedTitle": "Facility (Points)",
+      "id": "FacilityPnt",
+      "itemCount": 3,
+      "totalItems": 3
+    },
+    "FacilitySrf": {
+      "title": "Facility (Surfaces)",
+      "translatedTitle": "Facility (Surfaces)",
+      "id": "FacilitySrf",
+      "itemCount": 9,
+      "totalItems": 9
+    },
+    "HydrographyCrv": {
+      "title": "Hydrography (Curves)",
+      "translatedTitle": "Hydrography (Curves)",
+      "id": "HydrographyCrv",
+      "itemCount": 26,
+      "totalItems": 26
+    },
+    "HydrographyPnt": {
+      "title": "Hydrography (Points)",
+      "translatedTitle": "Hydrography (Points)",
+      "id": "HydrographyPnt",
+      "itemCount": 2,
+      "totalItems": 2
+    },
+    "HydrographySrf": {
+      "title": "Hydrography (Surfaces)",
+      "translatedTitle": "Hydrography (Surfaces)",
+      "id": "HydrographySrf",
+      "itemCount": 20,
+      "totalItems": 20
+    },
+    "IndustrySrf": {
+      "title": "Industry (Surfaces)",
+      "translatedTitle": "Industry (Surfaces)",
+      "id": "IndustrySrf",
+      "itemCount": 1,
+      "totalItems": 1
+    },
+    "InformationPnt": {
+      "title": "Information (Points)",
+      "translatedTitle": "Information (Points)",
+      "id": "InformationPnt",
+      "itemCount": 73,
+      "totalItems": 73
+    },
+    "MilitarySrf": {
+      "title": "Military (Surfaces)",
+      "translatedTitle": "Military (Surfaces)",
+      "id": "MilitarySrf",
+      "itemCount": 29,
+      "totalItems": 29
+    },
+    "PhysiographyCrv": {
+      "title": "Physiography (Curves)",
+      "translatedTitle": "Physiography (Curves)",
+      "id": "PhysiographyCrv",
+      "itemCount": 1,
+      "totalItems": 1
+    },
+    "RecreationCrv": {
+      "title": "Recreation (Curves)",
+      "translatedTitle": "Recreation (Curves)",
+      "id": "RecreationCrv",
+      "itemCount": 1,
+      "totalItems": 1
+    },
+    "RecreationPnt": {
+      "title": "Recreation (Points)",
+      "translatedTitle": "Recreation (Points)",
+      "id": "RecreationPnt",
+      "itemCount": 3,
+      "totalItems": 3
+    },
+    "RecreationSrf": {
+      "title": "Recreation (Surfaces)",
+      "translatedTitle": "Recreation (Surfaces)",
+      "id": "RecreationSrf",
+      "itemCount": 6,
+      "totalItems": 6
+    },
+    "SettlementPnt": {
+      "title": "Settlement (Points)",
+      "translatedTitle": "Settlement (Points)",
+      "id": "SettlementPnt",
+      "itemCount": 48,
+      "totalItems": 48
+    },
+    "SettlementSrf": {
+      "title": "Settlement (Surfaces)",
+      "translatedTitle": "Settlement (Surfaces)",
+      "id": "SettlementSrf",
+      "itemCount": 52,
+      "totalItems": 52
+    },
+    "StructureCrv": {
+      "title": "Structure (Curves)",
+      "translatedTitle": "Structure (Curves)",
+      "id": "StructureCrv",
+      "itemCount": 27,
+      "totalItems": 27
+    },
+    "StructurePnt": {
+      "title": "Structure (Points)",
+      "translatedTitle": "Structure (Points)",
+      "id": "StructurePnt",
+      "itemCount": 38,
+      "totalItems": 38
+    },
+    "StructureSrf": {
+      "title": "Structure (Surfaces)",
+      "translatedTitle": "Structure (Surfaces)",
+      "id": "StructureSrf",
+      "itemCount": 82,
+      "totalItems": 82
+    },
+    "TransportationGroundCrv": {
+      "title": "Transportation - Ground (Curves)",
+      "translatedTitle": "Transportation - Ground (Curves)",
+      "id": "TransportationGroundCrv",
+      "itemCount": 3694,
+      "totalItems": 3694
+    },
+    "TransportationGroundPnt": {
+      "title": "Transportation - Ground (Points)",
+      "translatedTitle": "Transportation - Ground (Points)",
+      "id": "TransportationGroundPnt",
+      "itemCount": 54,
+      "totalItems": 54
+    },
+    "TransportationGroundSrf": {
+      "title": "Transportation - Ground (Surfaces)",
+      "translatedTitle": "Transportation - Ground (Surfaces)",
+      "id": "TransportationGroundSrf",
+      "itemCount": 5,
+      "totalItems": 5
+    },
+    "TransportationWaterCrv": {
+      "title": "Transportation - Water (Curves)",
+      "translatedTitle": "Transportation - Water (Curves)",
+      "id": "TransportationWaterCrv",
+      "itemCount": 4,
+      "totalItems": 4
+    },
+    "UtilityInfrastructureCrv": {
+      "title": "Utility Infrastructure (Curves)",
+      "translatedTitle": "Utility Infrastructure (Curves)",
+      "id": "UtilityInfrastructureCrv",
+      "itemCount": 11,
+      "totalItems": 11
+    },
+    "UtilityInfrastructurePnt": {
+      "title": "Utility Infrastructure (Points)",
+      "translatedTitle": "Utility Infrastructure (Points)",
+      "id": "UtilityInfrastructurePnt",
+      "itemCount": 575,
+      "totalItems": 575
+    },
+    "VegetationSrf": {
+      "title": "Vegetation (Surfaces)",
+      "translatedTitle": "Vegetation (Surfaces)",
+      "id": "VegetationSrf",
+      "itemCount": 8,
+      "totalItems": 8
+    },
+    "o2s_a": {
+      "title": "Other (Surfaces)",
+      "translatedTitle": "Other (Surfaces)",
+      "id": "o2s_a",
+      "itemCount": 3,
+      "totalItems": 3
+    },
+    "o2s_l": {
+      "title": "Other (Curves)",
+      "translatedTitle": "Other (Curves)",
+      "id": "o2s_l",
+      "itemCount": 33,
+      "totalItems": 33
+    },
+    "o2s_p": {
+      "title": "Other (Points)",
+      "translatedTitle": "Other (Points)",
+      "id": "o2s_p",
+      "itemCount": 17,
+      "totalItems": 17
+    }
+  },
+  "finland-places": {
+    "placenames": {
+      "title": "PlaceName",
+      "translatedTitle": "PlaceName",
+      "id": "placenames",
+      "totalItems": 817962
+    },
+    "places": {
+      "title": "Place",
+      "translatedTitle": "Place",
+      "id": "places",
+      "totalItems": 804789
+    },
+    "mapnames": {
+      "title": "MapName",
+      "translatedTitle": "MapName",
+      "id": "mapnames",
+      "extraLargeData": true,
+      "totalItems": 1401034
+    },
+    "placenames_simple": {
+      "title": "PlaceNameSimple",
+      "translatedTitle": "PlaceNameSimple",
+      "id": "placenames_simple",
+      "totalItems": 817962
+    }
+  }
+}

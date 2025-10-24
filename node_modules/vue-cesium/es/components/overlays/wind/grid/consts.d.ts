@@ -1,0 +1,10 @@
+export declare const π: number;
+export declare const τ: number;
+export declare const DEG: number;
+export declare const RAD: number;
+export declare const MILLI = 1;
+export declare const SECOND: number;
+export declare const MINUTE: number;
+export declare const HOUR: number;
+export declare const DAY: number;
+export declare const NIL = 7e+37;

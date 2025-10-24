@@ -1,0 +1,752 @@
+/*********** 全局 & 布局 ***********/
+/* 定义全局数字主题变量 */
+:root {
+  --digital-bg-color: #0A1838; /* 深蓝背景 */
+  --digital-primary-color: #00FFFF; /* 亮青色 */
+  --digital-secondary-color: #007BFF; /* 亮蓝色 */
+  --digital-text-color: #A0B0D0; /* 浅灰色文字 */
+  --digital-border-color: #00FFFF; /* 边框颜色 (亮青色) */
+  --digital-glow-color: #00FFFF; /* 发光颜色 */
+  --digital-panel-bg: rgba(10, 24, 56, 0.7); /* 面板背景 (半透明深蓝) */
+  --digital-card-bg: rgba(10, 24, 56, 0.8); /* 卡片背景 (略深半透明深蓝) */
+  --digital-hover-bg: rgba(0, 255, 255, 0.1); /* 悬停背景 (透明青色) */
+  --digital-shadow-light: rgba(0, 255, 255, 0.3); /* 较淡的发光阴影 */
+  --digital-shadow-medium: rgba(0, 255, 255, 0.6); /* 中等发光阴影 */
+  --digital-shadow-strong: rgba(0, 255, 255, 0.9); /* 强烈发光阴影 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.adaptive-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background: var(--digital-bg-color); /* 主背景色改为深蓝 */
+  color: var(--digital-text-color); /* 默认文字颜色 */
+  position: relative;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Header */
+.adaptive-header {
+  height: var(--header-height);
+  /* 使用定义的头部高度 */
+  background: linear-gradient(to right, rgba(0, 255, 255, 0.1), rgba(0, 255, 255, 0.05), rgba(0, 255, 255, 0.1));
+  border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  position: relative;
+  z-index: 10;
+  flex-shrink: 0;
+  /* 防止头部被压缩 */
+
+  /* 以下是适应现有 .nav-wrapper 结构的样式 */
+  display: flex;
+  /* 让 nav-wrapper 的子元素在头部内居中和分散 */
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  /* 与 CrimeMapView.vue 的 padding 保持一致 */
+}
+
+/* nav-wrapper 在此模式下将不再直接定义布局，其子元素将由 .adaptive-header 控制 */
+/* 所以 .nav-wrapper 的大部分样式可以移除或简化 */
+.nav-wrapper {
+  width: 100%;
+  /* 保持宽度 */
+  display: flex;
+  /* 确保内部元素仍能灵活布局 */
+  justify-content: space-between;
+  /* 子元素分散对齐 */
+  align-items: center;
+  /* 垂直居中 */
+}
+
+
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  filter: drop-shadow(0 0 5px var(--digital-primary-color)); /* Logo 添加发光 */
+}
+
+.logo-text {
+  font-size: 24px;
+  /* 与 CrimeMapView.vue 的 font-size 保持一致 */
+  font-weight: bold;
+  color: var(--digital-primary-color);
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+  letter-spacing: 2px;
+  white-space: nowrap;
+  /* 防止标题换行 */
+}
+
+
+.adaptive-nav {
+  flex-grow: 1;
+  /* 占据中间剩余空间 */
+  display: flex;
+  justify-content: center;
+  /* 导航项居中 */
+  align-items: center;
+  gap: 20px;
+  /* 导航项间距 */
+  margin: 0;
+  /* 移除之前可能有的 margin */
+}
+
+.nav-item {
+  color: var(--digital-text-color);
+  font-size: 1.1rem;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  white-space: nowrap;
+  /* 防止导航项换行 */
+  text-align: center;
+  /* 确保文本在其框内居中 */
+  position: relative;
+  /* 用于可能的底部边框 */
+  background-color: rgba(0, 255, 255, 0.05);
+  /* 非激活状态下的半透明背景 */
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  /* 非激活状态下的边框 */
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.1);
+  /* 非激活状态下的轻微阴影 */
+}
+
+.nav-item:hover {
+  background-color: rgba(0, 255, 255, 0.15);
+  /* 鼠标悬停时的背景发光效果 */
+  color: var(--digital-primary-color);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+  transform: translateY(-2px);
+  /* 轻微上浮效果 */
+}
+
+.nav-item.active {
+  /* Vue Router 提供的激活类名 */
+  background-color: var(--digital-primary-color);
+  color: var(--digital-bg-color);
+  /* 激活时文本颜色与背景对比 */
+  box-shadow: 0 0 15px var(--digital-glow-color);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  /* 激活时保持发光效果 */
+}
+
+
+/* user-area 对应 CrimeMapView.vue 的 .header-right */
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* 与 CrimeMapView.vue 的 gap 保持一致 */
+  flex-shrink: 0;
+}
+
+/* welcome-message 对应 CrimeMapView.vue 的 .user-info-display */
+.welcome-message {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* 与 CrimeMapView.vue 的 gap 保持一致 */
+  color: var(--digital-text-color);
+  font-size: 1rem;
+  /* 与 CrimeMapView.vue 的 font-size 保持一致 */
+  white-space: nowrap;
+  /* 防止换行 */
+  margin-right: 0;
+  /* 移除原来的 margin-right */
+}
+
+/* welcome-icon 对应 CrimeMapView.vue 的 .digital-welcome-icon */
+.welcome-icon {
+  font-size: 1.1em;
+  /* 移除动画 */
+  color: var(--digital-primary-color);
+}
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  10%, 30% { transform: rotate(15deg); }
+  20%, 40% { transform: rotate(-10deg); }
+  50% { transform: rotate(0deg); }
+}
+
+/* logout-btn 对应 CrimeMapView.vue 的 .logout-btn-digital */
+.logout-btn {
+  padding: 8px 15px;
+  /* 与 CrimeMapView.vue 的 padding 保持一致 */
+  font-size: 0.9rem;
+  /* 与 CrimeMapView.vue 的 font-size 保持一致 */
+  border-radius: 5px;
+  /* 与 CrimeMapView.vue 的 border-radius 保持一致 */
+  cursor: pointer;
+  background-color: rgba(0, 255, 255, 0.2);
+  color: var(--digital-primary-color);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: var(--digital-primary-color);
+  color: var(--digital-bg-color);
+  box-shadow: 0 0 15px var(--digital-primary-color);
+  transform: translateY(-2px);
+}
+
+
+/* 主区块 */
+.adaptive-main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex: 1;
+  width: 100%;
+  padding-top: 60px; /* 补偿 fixed header 的高度 */
+}
+
+.hero {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  filter: brightness(0.6) grayscale(0.5); /* 视频背景调暗、去饱和 */
+}
+
+.bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 255, 255, 0.1); /* 叠加层改为透明青色 */
+  z-index: 1;
+  pointer-events: none;
+  box-shadow: inset 0 0 80px rgba(0, 255, 255, 0.5); /* 内部发光效果 */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.system-title {
+  font-size: 3.5rem; /* 标题字号更大 */
+  color: var(--digital-primary-color); /* 亮青色 */
+  margin-bottom: 1.2rem;
+  text-shadow: 0 0 15px var(--digital-shadow-strong); /* 强烈文字发光 */
+  animation: pulse 2s infinite alternate; /* 标题脉动效果 */
+}
+
+@keyframes pulse {
+  0% { text-shadow: 0 0 10px var(--digital-shadow-medium), 0 0 20px var(--digital-shadow-medium); }
+  100% { text-shadow: 0 0 20px var(--digital-shadow-strong), 0 0 30px var(--digital-shadow-strong); }
+}
+
+.system-subtitle {
+  font-size: 1.8rem; /* 副标题字号更大 */
+  color: var(--digital-text-color); /* 浅灰色 */
+  text-shadow: 0 0 8px var(--digital-shadow-light); /* 副标题发光 */
+  margin-bottom: 2rem;
+}
+
+.content-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: var(--digital-bg-color); /* 内容区背景色 */
+  color: var(--digital-text-color); /* 内容区文字颜色 */
+}
+
+/* Footer */
+.adaptive-footer {
+  width: 100%;
+  background: rgba(10, 24, 56, 0.95); /* 底部改为半透明深蓝 */
+  color: rgba(0, 255, 255, .7); /* 底部文字改为半透明青色 */
+  text-align: center;
+  padding: 1.5rem;
+  font-size: .9rem;
+  border-top: 1px solid var(--digital-border-color); /* 顶部亮青色细线 */
+  box-shadow: 0 -2px 15px var(--digital-shadow-medium); /* 底部阴影发光 */
+}
+
+.slide-link {
+  display: block;
+  text-decoration: none;
+}
+
+/*********** 轮播器样式 ***********/
+.slider {
+  width: 800px;
+  margin: 20px auto; /* 居中显示，增加上下间距 */
+  /* margin-left: -80px; */ /* 移除左侧负边距，让它居中 */
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 20px var(--digital-shadow-strong); /* 强烈发光 */
+  border: 1px solid var(--digital-border-color); /* 青色边框 */
+  border-radius: 12px; /* 圆角 */
+  background-color: var(--digital-card-bg); /* 轮播器背景 */
+}
+
+.slide-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.slide {
+  flex: 0 0 800px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.2); /* 每个 slide 的背景，防止图片加载慢时显示空白 */
+  border-radius: 10px; /* 内部圆角 */
+  overflow: hidden; /* 确保图片不超出圆角 */
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8) contrast(1.1); /* 图片略微调暗和增加对比度 */
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px; /* 增大字体 */
+  color: var(--digital-primary-color); /* 青色图标 */
+  background: rgba(0, 255, 255, 0.15); /* 半透明青色背景 */
+  padding: 15px 10px; /* 增大点击区域 */
+  z-index: 10;
+  opacity: 0.8; /* 默认可见度，不再完全隐藏 */
+  transition: opacity 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  border: 1px solid var(--digital-border-color); /* 青色边框 */
+  border-radius: 8px; /* 圆角 */
+  box-shadow: 0 0 10px var(--digital-shadow-medium); /* 发光 */
+  text-shadow: 0 0 5px var(--digital-shadow-light); /* 文字发光 */
+}
+
+.prev {
+  left: 10px; /* 距离边缘 */
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.next {
+  right: 10px; /* 距离边缘 */
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 1;
+  background: rgba(0, 255, 255, 0.3); /* 悬停时背景更亮 */
+  box-shadow: 0 0 15px var(--digital-shadow-strong); /* 悬停时更强发光 */
+}
+
+.desc-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem; /* 增大字号 */
+  font-weight: 600;
+  color: var(--digital-primary-color); /* 青色标题 */
+  text-shadow: 0 0 8px var(--digital-shadow-light); /* 标题发光 */
+}
+
+.desc-text {
+  margin: 0;
+  font-size: 1.1rem; /* 增大字号 */
+  line-height: 1.8; /* 调整行高 */
+  color: var(--digital-text-color); /* 浅灰色文字 */
+}
+
+.indicators {
+  position: absolute;
+  bottom: 15px; /* 调整位置 */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5); /* 指示器背景 */
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 255, 255, 0.3); /* 边框 */
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.4); /* 发光 */
+}
+
+.indicator {
+  display: inline-block;
+  width: 12px; /* 增大尺寸 */
+  height: 12px;
+  margin: 0 6px; /* 调整间距 */
+  background: rgba(0, 255, 255, 0.4); /* 默认指示器颜色为透明青色 */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 255, 255, 0.7); /* 边框 */
+}
+
+.indicator.active {
+  background: var(--digital-primary-color); /* 激活时为亮青色 */
+  box-shadow: 0 0 10px var(--digital-glow-color); /* 激活时发光 */
+}
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* 增大间距 */
+}
+
+.slide-desc {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  background-color: var(--digital-card-bg); /* 描述区背景 */
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid var(--digital-border-color);
+  box-shadow: 0 0 15px var(--digital-shadow-medium);
+}
+
+
+.info-banner {
+  width: 100%;
+  height: 250px; /* 增加高度 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem; /* 增加内边距 */
+  background: var(--digital-bg-color); /* 背景色 */
+  border-top: 1px solid rgba(0, 255, 255, 0.1); /* 顶部细线 */
+  border-bottom: 1px solid rgba(0, 255, 255, 0.1); /* 底部细线 */
+  margin: 3rem 0; /* 增加上下外边距 */
+}
+
+.banner-img {
+  width: 200px; /* 增大图片尺寸 */
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-left: 5rem;
+  filter: drop-shadow(0 0 15px var(--digital-shadow-medium)); /* 图片发光 */
+}
+
+/* 文字区域 */
+.banner-text {
+  flex: 1;
+  padding: 0 2rem;
+  text-align: left;
+}
+
+.banner-title {
+  font-size: 3.5rem; /* 增大标题字号 */
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  color: var(--digital-primary-color); /* 亮青色 */
+  text-shadow: 0 0 10px var(--digital-shadow-medium); /* 标题发光 */
+}
+
+.banner-desc {
+  font-size: 1.2rem; /* 增大描述字号 */
+  line-height: 1.8;
+  color: var(--digital-text-color); /* 浅灰色文字 */
+  margin-left: 2rem;
+  width: 100%;
+}
+
+/* 当加上 .reverse 时，左右颠倒 */
+.info-banner.reverse {
+  flex-direction: row-reverse;
+}
+
+
+.card-carousel {
+  width: 100%;
+  max-width: 1280px;
+  margin: 3rem auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* 导航按钮 */
+.nav-btn {
+  background: var(--digital-panel-bg); /* 半透明深蓝背景 */
+  border: 1px solid var(--digital-border-color); /* 亮青色边框 */
+  width: 45px; /* 增大尺寸 */
+  height: 80px; /* 增大尺寸 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem; /* 增大图标字号 */
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--digital-shadow-medium); /* 初始发光 */
+  transition: all .2s ease;
+  color: var(--digital-primary-color); /* 青色图标 */
+  text-shadow: 0 0 5px var(--digital-shadow-light); /* 图标发光 */
+}
+
+.nav-btn:hover {
+  background: rgba(0, 255, 255, 0.2); /* 悬停时背景更亮 */
+  box-shadow: 0 0 20px var(--digital-shadow-strong); /* 悬停时更强发光 */
+}
+
+.nav-btn.left {
+  z-index: 10;
+  margin-right: 20px;
+  margin-left: -20px;
+  border-top-right-radius: 12px; /* 圆角 */
+  border-bottom-right-radius: 12px;
+}
+
+.nav-btn.right {
+  z-index: 10;
+  margin-left: 20px; /* 新增，确保右边距 */
+  border-top-left-radius: 12px; /* 圆角 */
+  border-bottom-left-radius: 12px;
+}
+
+.carousel-clip {
+  overflow: visible; /* 只管剪掉完全跑出屏外的卡片 */
+  width: 100%;
+  height: 600px; /* = 单卡高，或你原来的 viewport 高 */
+  position: relative;
+}
+
+.card-viewport {
+  width: 100%;
+  height: 600px; /* = 卡片高度；改这里即可 */
+  overflow: visible;
+  position: relative;
+}
+
+.card-track {
+  display: flex;
+  gap: 24px; /* 与 TS 里的 gap 保持一致 */
+  transition: transform .5s ease;
+}
+
+/* 每张卡片 */
+.card {
+  flex: 0 0 580px; /* 固定宽；与 cardWidth 对应 */
+  height: 600px; /* 同上 */
+  background: var(--digital-card-bg); /* 卡片背景为深色半透明 */
+  border-radius: 16px;
+  box-shadow: 0 0 15px var(--digital-shadow-medium); /* 卡片发光 */
+  border: 1px solid var(--digital-border-color); /* 青色边框 */
+  display: flex;
+  align-items: center;
+  padding: 0 1.75rem;
+  gap: 1.75rem;
+  flex-direction: column;
+  cursor: pointer;
+  transition:
+    transform .3s ease,
+    background-color .3s ease,
+    box-shadow .3s ease;
+  position: relative;
+}
+
+.card:hover,
+.card:focus-visible {
+  transform: scale(1.03); /* 轻微放大，避免过度放大 */
+  background-color: rgba(0, 255, 255, 0.1); /* 悬停时背景变为透明青色 */
+  box-shadow: 0 0 25px var(--digital-shadow-strong); /* 悬停时强烈发光 */
+  z-index: 1; /* 确保悬停卡片在上方 */
+}
+
+/* 卡片内元素 */
+.card-img {
+  width: 100%;
+  max-width: 450px;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  filter: drop-shadow(0 0 10px var(--digital-shadow-light)); /* 图片发光 */
+}
+
+.card-text {
+  flex: 1;
+}
+
+.card-text h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--digital-primary-color); /* 青色标题 */
+  text-shadow: 0 0 8px var(--digital-shadow-medium); /* 标题发光 */
+}
+
+.card-text p {
+  line-height: 1.8; /* 调整行高 */
+  color: var(--digital-text-color); /* 浅灰色文字 */
+  text-align: left;
+}
+
+
+/* 小屏调整 */
+@media(max-width:768px) {
+  .nav-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .adaptive-main {
+    padding-top: 100px; /* 移动端header可能更高 */
+  }
+
+  .system-title {
+    font-size: 2.2rem; /* 调整标题字号 */
+    text-shadow: 0 0 10px var(--digital-shadow-strong);
+  }
+
+  .system-subtitle {
+    font-size: 1.2rem; /* 调整副标题字号 */
+    text-shadow: 0 0 6px var(--digital-shadow-light);
+  }
+
+  .slider {
+    width: 95%; /* 调整宽度适应小屏 */
+    margin: 15px auto;
+    height: auto; /* 高度自适应 */
+  }
+
+  .slide,
+  .slide-track {
+    width: 100%;
+    height: auto; /* 高度自适应 */
+  }
+
+  .slide {
+    height: 300px; /* 设定一个较小的高度 */
+  }
+
+  .prev, .next {
+    padding: 10px 8px; /* 缩小按钮尺寸 */
+    font-size: 20px;
+  }
+
+  .desc-title {
+    font-size: 1.3rem;
+  }
+  .desc-text {
+    font-size: 1rem;
+  }
+
+  .info-banner {
+    flex-direction: column;
+    height: auto;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    margin: 1.5rem 0; /* 调整外边距 */
+  }
+
+  .banner-img {
+    width: 80%; /* 调整图片宽度 */
+    height: 180px; /* 调整图片高度 */
+    margin-bottom: 1rem;
+    margin-left: 0; /* 居中 */
+  }
+
+  .banner-title {
+    font-size: 2.5rem; /* 调整标题字号 */
+    margin-left: 0;
+  }
+
+  .banner-desc {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+
+  .info-banner.reverse {
+    flex-direction: column; /* 保持一致 */
+  }
+
+  .card-carousel {
+    margin: 2rem auto;
+  }
+
+  .nav-btn {
+    width: 35px;
+    height: 60px;
+    font-size: 2rem;
+    margin: 0 10px; /* 调整间距 */
+  }
+
+  .card-viewport {
+    height: auto;
+  }
+
+  .card-track {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card {
+    width: 95%; /* 卡片宽度适应 */
+    height: auto;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin: 0 auto; /* 居中 */
+  }
+
+  .card-img {
+    width: 90%;
+    height: 160px;
+    margin-bottom: 1rem;
+  }
+
+  .card-text h3 {
+    font-size: 2.2rem;
+  }
+
+  .card-text p {
+    font-size: 0.95rem;
+  }
+
+  .card:hover {
+    transform: none; /* 禁用小屏悬停放大 */
+    box-shadow: 0 0 15px var(--digital-shadow-medium); /* 保持发光 */
+  }
+}
